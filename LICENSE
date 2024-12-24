@@ -1,0 +1,32 @@
+File-based Public License (FPL) – Version 1.0 (Draft)
+
+1. SCOPE  
+Any file under this License remains under the FPL. Files without FPL content  
+remain under their own terms.
+
+2. DEFINITIONS  
+- "Licensed Material": files or works under this License.  
+- "Contributor": anyone who modifies or distributes Licensed Material.  
+- "Derivative Work": any file or work that includes or is based on Licensed  
+  Material, including modifications or expansions.
+
+3. COPYRIGHT GRANT  
+Each Contributor grants a perpetual, worldwide, royalty-free license to  
+reproduce, modify, and distribute the Licensed Material under the FPL.
+
+4. MODIFIED FILES  
+- Modified files must remain under the FPL.  
+- Include the FPL header (see below) in those files.
+
+5. COMBINING & DERIVATIVE WORKS  
+- Combining FPL-licensed files with other code does not subject the other code  
+  to the FPL unless it includes or is derived from FPL content.  
+- Derivative Works that include FPL content remain under the FPL.
+
+6. DISCLAIMER & LIABILITY  
+LICENSED MATERIAL IS PROVIDED “AS IS,” WITHOUT WARRANTY. CONTRIBUTORS ARE NOT  
+LIABLE FOR ANY DAMAGES TO THE EXTENT PERMITTED BY LAW.
+
+7. TERMINATION & MISCELLANEOUS  
+Rights end upon non-compliance. Others’ rights remain valid if they comply.  
+Invalid provisions do not affect remaining terms.
