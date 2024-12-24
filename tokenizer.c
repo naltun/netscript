@@ -6,6 +6,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define KEYWORD_VALIDATE(value, keyword) \
+    (strncmp(value, keyword, sizeof(keyword) - 1) == 0 && (current - start) == (sizeof(keyword) - 1))
+
 typedef struct {
     char *type;  /* Token type: IDENTIFIER, KEYWORD, NUMBER, STRING, SYMBOL */
     char *value; /* Token value: print, argv, etc. */
@@ -66,10 +69,10 @@ tokenize(const char *src, TokenList *list)
 
             char *value = strndup(start, current - start);
 
-            if (strncmp(value, "else", sizeof(*value)) == 0 ||
-                strncmp(value, "for", sizeof(*value)) == 0 ||
-                strncmp(value, "if", sizeof(*value)) == 0 ||
-                strncmp(value, "print", sizeof(*value)) == 0) {
+            if (KEYWORD_VALIDATE(value, "else") ||
+                KEYWORD_VALIDATE(value, "for") ||
+                KEYWORD_VALIDATE(value, "if") ||
+                KEYWORD_VALIDATE(value, "print")){
                 add_token(list, "KEYWORD", value);
             } else {
                 add_token(list, "IDENTIFIER", value);
